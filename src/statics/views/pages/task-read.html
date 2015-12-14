@@ -1,0 +1,37 @@
+<div class="cth-task-read">
+    <div class="cth-task-read--main">
+        <div class="cth-component">
+            <h4>Do</h4>
+            <h2>Task {{currentTask + 1}}: {{ title || 'Build your first website' }}</h2>
+            <img class="cth-do-task" ng-src="images/resource-do-primary-{{primaryResource}}.png">
+            <div class="cth-task-info">
+                <div class="cth-user cth-user-c" ng-show="primaryResource === 2"><p><span class="cth-bold">Anthony Dunn</span> 24 minutes ago</p></div>
+                <div class="cth-user cth-user-a" ng-show="primaryResource === 3"><p><span class="cth-bold">Jeffrey Lynch</span> 2 hours ago</p></div>
+                <div class="cth-user cth-user-f" ng-show="primaryResource === 1"><p><span class="cth-bold">Jennifer Grant</span> 3 hours ago</p></div>
+
+                <div class="cth-people">
+                    <div class="cth-counter">{{doneCount(readButtonChange)}}</div>
+                    <p class="cth-icon-text">people have completed this task</p>
+                </div>
+            </div>
+        </div>
+        <div class="cth-component">
+            <div class="cth-component-header">
+                <h3 class="cth-component-header--title">
+                    Alternative resources
+                    <span><p>These resources were suggested by peers <br/> as alternative resources for this task.</p></span>
+                </h3>
+<!--                 <div class="cth-component-header--extra">
+                    <p><a class="cth-button" onclick="alert('This functionality is not yet included');">Suggest alternative link</a></p>
+                </div> -->
+            </div>
+            <div style="display:inline" ng-repeat="resource in alternativeResources">
+                <img class="cth-link-user" ng-src="images/resource-do-alternative-{{resource}}.png" ng-click="selectAlternative(resource)">
+            </div>
+            <img onclick="alert('This functionality is not yet included');" class="cth-link-suggest" src="images/suggest-link.png">
+        </div>
+    </div>
+
+<!--     <div class="cth-task-read--aside">
+    </div> -->
+</div>

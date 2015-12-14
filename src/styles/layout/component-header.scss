@@ -1,0 +1,15 @@
+.cth-component-header {
+
+    &--title {
+        float: left;
+    }
+
+    &--extra {
+        float: right;
+
+        .cth-button {
+            margin-top: 4px;
+        }
+    }
+    @extend %clearfix;
+}

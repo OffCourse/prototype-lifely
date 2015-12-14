@@ -1,0 +1,128 @@
+.cth-submitted {
+    width: 703px;
+    margin: 0 auto;
+    position: relative;
+    background: $white;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+
+    .cth-close {
+        position: absolute;
+        top: -28px;
+        right: -128px;
+    }
+
+    .cth-header {
+        padding: $padding-md $padding-lg;
+        margin-top: $margin-lg;
+        border-bottom: 1px solid $border-color;
+    }
+
+    .cth-strip {
+        padding: $padding-md $padding-lg;
+    }
+
+    img {
+        margin-top: $margin-sm;
+    }
+
+    .cth-container {
+        border-top: 1px solid $border-color;
+
+        .cth-comments {
+            float: left; 
+            width: 75%; 
+
+            .cth-component {
+                border-left: 0px solid $border-color;
+                border-right: 1px solid $border-color;
+                padding-top: $padding-md;
+                padding-right: $padding-sm;
+                padding-bottom: $padding-md;
+                padding-left: $padding-lg;
+
+                .cth-list {
+                    margin-top: 0px;
+                }
+
+                .cth-media {
+                    border: 0px solid $border-color;
+                    padding: 0;
+                    margin-bottom: $padding-sm;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+
+                .cth-icon {
+                    margin-right: 2px;
+                    margin-top: -2px;
+                }
+
+                .cth-icon-done-dot {
+                    padding: 0 4px;
+                }
+            }
+        }
+
+        .cth-social {
+            float: right; 
+            width: 25%; 
+
+           .cth-component {
+                border-left: 0px solid $border-color;
+                border-right: 0px solid $border-color;
+                padding-top: $padding-md;
+                padding-right: $padding-lg;
+                padding-bottom: $padding-md;
+                padding-left: $padding-sm;
+
+                .cth-list {
+                    margin-top: -5px;
+                }
+
+                .cth-icon {
+                    margin-right: 4px;
+                    margin-top: -2px;
+                }
+            }
+        }
+
+        @extend %clearfix;
+    }
+
+    .cth-form-group {
+        padding: $padding-xs;
+        background: $color-base;
+
+        .cth-form-input {
+            float: left;
+            width: 77%;
+            height: 46px;
+        }
+
+        .cth-icon-break {
+            margin-left: 7px;
+            margin-top: 16px;
+        }
+
+        .cth-button {
+            width: 19.4%;
+            float: right;
+            text-align: center;
+
+            .cth-icon-heart {
+                margin-left: 10px;
+                margin-top: -3px;
+            }
+        }
+
+        &:after {
+           content: "";
+           display: block;
+           clear: both;
+        }
+    }
+
+}

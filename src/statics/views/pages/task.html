@@ -1,0 +1,200 @@
+<div class="cth-task">
+    <div class="cth-task--aside">
+        <div class="cth-component">
+            <h4>Submit</h4>
+            <h2>Task {{currentTask + 1}}: {{ title || 'Build your first website' }}</h2>
+            <img class="cth-responsive" ng-src="images/resource-submit-primary-{{primaryResource}}.png">
+            <div class="cth-task-info">
+                <div class="cth-user cth-user-e" ng-show="primaryResource === 2"><p><span class="cth-bold">David Berry</span> 12 minutes ago</p></div>
+                <div class="cth-user cth-user-i" ng-show="primaryResource === 1"><p><span class="cth-bold">Bruce Palmer</span> 8 hours ago</p></div>
+                <div class="cth-people">
+                    <div class="cth-counter">{{currentCounter}}</div>
+                    <p class="cth-icon-text">people have submitted their work</p>
+                </div>
+            </div>
+        </div>
+        <div class="cth-component">
+            <div class="cth-component-header">
+                <h3 class="cth-component-header--title">
+                    Alternative resources
+                    <span><p>These resources were suggested by peers as alternative resources for this assignment.</p></span>
+                </h3>
+<!--                 <div class="cth-component-header--extra">
+                    <p><a class="cth-button" onclick="alert('This functionality is not yet included');">Suggest alternative link</a></p>
+                </div> -->
+            </div>
+            <div style="display:inline" ng-repeat="resource in alternativeResources">
+                <img class="cth-link-user" ng-src="images/resource-submit-alternative-{{resource}}.png" ng-click="selectAlternative(resource)">
+            </div>
+            <img onclick="alert('This functionality is not yet included');" class="cth-link-suggest" src="images/suggest-link.png">
+        </div>
+    </div>
+    <div class="cth-task--main">
+        <div class="cth-component">
+            <img class="cth-responsive" src="images/task-search.png">
+
+            <ul class="cth-list cth-list-column cth-list-products">
+                <li ng-show="isSubmitted">
+                    <a ui-sref="app.submitted">
+                        <div class="cth-media">
+                            <figure class="cth-media--figure cth-user cth-user-avatar-only cth-user-bas"></figure>
+                            <p class="cth-media--content"><span class="cth-bold">bas/assignment2 on GitHub</span><br/>
+                                <img class="cth-stats" src="images/stats.png">
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="app.submitted">
+                        <div class="cth-media">
+                            <figure class="cth-media--figure cth-user cth-user-avatar-only cth-user-a"></figure>
+                            <p class="cth-media--content"><span class="cth-bold">timothy/assignment2 on GitHub</span><br/>
+                                <img class="cth-stats" src="images/stats.png">
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="app.submitted">
+                        <div class="cth-media">
+                            <figure class="cth-media--figure cth-user cth-user-avatar-only cth-user-b"></figure>
+                            <p class="cth-media--content"><span class="cth-bold">sarah-assignment2 on Dropbox</span><br/>
+                                <img class="cth-stats" src="images/stats.png">
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="app.submitted">
+                        <div class="cth-media">
+                            <figure class="cth-media--figure cth-user cth-user-avatar-only cth-user-c"></figure>
+                            <p class="cth-media--content"><span class="cth-bold">drew-assig... on Google Drive</span><br/>
+                                <img class="cth-stats" src="images/stats.png">
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="app.submitted">
+                        <div class="cth-media">
+                            <figure class="cth-media--figure cth-user cth-user-avatar-only cth-user-d"></figure>
+                            <p class="cth-media--content"><span class="cth-bold">jane/buttons on Github</span><br/>
+                                <img class="cth-stats" src="images/stats.png">
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="app.submitted">
+                        <div class="cth-media">
+                            <figure class="cth-media--figure cth-user cth-user-avatar-only cth-user-f"></figure>
+                            <p class="cth-media--content"><span class="cth-bold">petra-buttons.pdf</span><br/>
+                                <img class="cth-stats" src="images/stats.png">
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="app.submitted">
+                        <div class="cth-media">
+                            <figure class="cth-media--figure cth-user cth-user-avatar-only cth-user-g"></figure>
+                            <p class="cth-media--content"><span class="cth-bold">timothy/assignment2 on GitHub</span><br/>
+                                <img class="cth-stats" src="images/stats.png">
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="app.submitted">
+                        <div class="cth-media">
+                            <figure class="cth-media--figure cth-user cth-user-avatar-only cth-user-h"></figure>
+                            <p class="cth-media--content"><span class="cth-bold">sarah-assignment2 on Dropbox</span><br/>
+                                <img class="cth-stats" src="images/stats.png">
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="app.submitted">
+                        <div class="cth-media">
+                            <figure class="cth-media--figure cth-user cth-user-avatar-only cth-user-i"></figure>
+                            <p class="cth-media--content"><span class="cth-bold">drew-assig... on Google Drive</span><br/>
+                                <img class="cth-stats" src="images/stats.png">
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="app.submitted">
+                        <div class="cth-media">
+                            <figure class="cth-media--figure cth-user cth-user-avatar-only cth-user-j"></figure>
+                            <p class="cth-media--content"><span class="cth-bold">jane/buttons on Github</span><br/>
+                                <img class="cth-stats" src="images/stats.png">
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="app.submitted">
+                        <div class="cth-media">
+                            <figure class="cth-media--figure cth-user cth-user-avatar-only cth-user-k"></figure>
+                            <p class="cth-media--content"><span class="cth-bold">petra-buttons.pdf</span><br/>
+                                <img class="cth-stats" src="images/stats.png">
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="app.submitted">
+                        <div class="cth-media">
+                            <figure class="cth-media--figure cth-user cth-user-avatar-only cth-user-a"></figure>
+                            <p class="cth-media--content"><span class="cth-bold">timothy/assignment2 on GitHub</span><br/>
+                                <img class="cth-stats" src="images/stats.png">
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="app.submitted">
+                        <div class="cth-media">
+                            <figure class="cth-media--figure cth-user cth-user-avatar-only cth-user-b"></figure>
+                            <p class="cth-media--content"><span class="cth-bold">sarah-assignment2 on Dropbox</span><br/>
+                                <img class="cth-stats" src="images/stats.png">
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="app.submitted">
+                        <div class="cth-media">
+                            <figure class="cth-media--figure cth-user cth-user-avatar-only cth-user-c"></figure>
+                            <p class="cth-media--content"><span class="cth-bold">drew-assig... on Google Drive</span><br/>
+                                <img class="cth-stats" src="images/stats.png">
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="app.submitted">
+                        <div class="cth-media">
+                            <figure class="cth-media--figure cth-user cth-user-avatar-only cth-user-d"></figure>
+                            <p class="cth-media--content"><span class="cth-bold">jane/buttons on Github</span><br/>
+                                <img class="cth-stats" src="images/stats.png">
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="app.submitted">
+                        <div class="cth-media">
+                            <figure class="cth-media--figure cth-user cth-user-avatar-only cth-user-f"></figure>
+                            <p class="cth-media--content"><span class="cth-bold">petra-buttons.pdf</span><br/>
+                                <img class="cth-stats" src="images/stats.png">
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

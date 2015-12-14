@@ -1,0 +1,51 @@
+<div class="cth-submitted">
+    <a ng-click="back()" class="cth-close"><i class="cth-icon cth-icon-close"></i></a>
+    <div class="cth-header">
+        <div class="cth-user cth-user-bas"><p><span class="cth-bold">Bas Dobbelaer</span> 3 hours ago</p></div>
+    </div>
+    <div class="cth-strip">
+        <p class="cth-bold">Discuss Bas's work</p>
+        <img class="cth-responsive" src="images/github.png">
+    </div>
+    <div class="cth-container">
+        <div class="cth-comments">
+            <div class="cth-component">
+                <ul class="cth-list">
+                    <li class="cth-media">
+                        <figure class="cth-media--figure cth-user cth-user-avatar-only cth-user-k"></figure>
+                        <p class="cth-media--content"><span class="cth-bold">Susan Murphy</span> <br/>
+                            Nice work Bas! The overall content is pretty good, I'd only try to<br/>
+                            sharpen the last paragraph of your about page a little bit.<br/>
+                            <span class="cth-subtext">30 minutes ago</span> <i class="cth-icon cth-icon-done-dot"></i><i class="cth-icon cth-icon-social-color cth-icon-heart"></i><span class="cth-social-color"> 13 likes</span>
+                        </p>
+                    </li>
+                    <li class="cth-media">
+                        <figure class="cth-media--figure cth-user cth-user-avatar-only cth-user-c"></figure>
+                        <p class="cth-media--content"><span class="cth-bold">Stephen Parker</span> <br/>
+                            The content is funny and to the point, but the call to actions<br/>
+                            don't really trigger me yet.<br/>
+                            <span class="cth-subtext">16 minutes ago</span> <i class="cth-icon cth-icon-done-dot"></i><i class="cth-icon cth-icon-heart"></i> 2 likes
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cth-social">
+            <div class="cth-component">
+                <ul class="cth-list">
+                    <li><p><i class="cth-icon cth-icon-eye"></i> 120 views</p></li>
+                    <li><p><i class="cth-icon cth-icon-talk"></i> 2 comments</p></li>
+                    <li><p ng-class="{'cth-icon-social-color': liked}"><i class="cth-icon  cth-icon-heart" ng-class="{'cth-icon-social-color': liked}"></i>{{ likeCount(liked) }} likes</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="cth-form-group">
+        <input type="text" class="cth-form-input" name="github-link" placeholder="Give Bas feedback"></input>
+        <p>
+            <i class="cth-icon cth-icon-break"></i>
+            <a ng-click="likeToggle()" class="cth-button" ng-class="{'cth-button-like': liked}">Like <i class="cth-icon cth-icon-light-color cth-icon-heart"></i></a>
+        </p>
+    </div>
+</div>

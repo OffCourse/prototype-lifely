@@ -1,0 +1,24 @@
+<div>
+    <img src="images/bottombar_open.png" alt="" ng-show="!bottombarExpanded" ng-click="bottombarExpanded = true;">
+    <p ng-click="$state.go('app.task', {goal: $state.params.goal})">
+        <a class="cth-button cth-button-dark">
+            Continue task
+            <i class="cth-icon cth-icon-right"></i>
+        </a>
+    </p>
+    <img src="images/bottombar_close.png" alt="" ng-show="bottombarExpanded" ng-click="bottombarExpanded = false;">
+    <ol class="cth-task-list" ng-show="bottombarExpanded">
+        <li ng-repeat="task in tasks">
+            <a ng-click="task.link()" class="cth-task-list--item">
+                <p class="cth-task-list--item--title">
+                    <span>{{$index + 1}}</span>
+                    {{task.title}}
+                    <i class="cth-icon {{task.iconClass}} cth-icon-secondary"></i>
+                </p>
+                <p class="cth-task-list--item--info">
+                    {{task.dateAppearance}}
+                </p>
+            </a>
+        </li>
+    </ol>
+</div>

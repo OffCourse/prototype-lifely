@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'NittiGrotesk-Medium';
+  src: url('../fonts/NittiGrotesk-Medium.eot');
+  src: url('../fonts/NittiGrotesk-Medium.woff') format('woff'),
+  url('../fonts/NittiGrotesk-Medium.ttf') format('truetype'),
+  url('/fotns/NittiGrotesk-Medium.otf') format('opentype');
+
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'NittiGrotesk-SemiLight';
+  src: url('../fonts/NittiGrotesk-SemiLight.eot');
+  src: url('../fonts/NittiGrotesk-SemiLight.woff') format('woff'),
+  url('../fonts/NittiGrotesk-SemiLight.ttf') format('truetype'),
+  url('../fonts/NittiGrotesk-SemiLight.otf') format('opentype');
+
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}

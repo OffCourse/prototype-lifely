@@ -1,0 +1,14 @@
+.cth-component {
+    background-color: $white;
+    border-bottom: 1px solid $border-color;
+    border-left: 1px solid $border-color;
+    padding: $padding-md;
+
+    &:last-child {
+        border-bottom: 0px;
+    }
+
+    .cth-list {
+        margin-top: $margin-sm - 4px;
+    }
+}

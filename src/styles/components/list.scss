@@ -1,0 +1,55 @@
+.cth-list {
+    li {
+        list-style: none;
+    }
+
+    &-buttons {
+        li {
+            margin-right: $margin-xs;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    @for $i from 2 through 3 {
+        &-column#{$i} {
+            @extend %clearfix;
+
+            li {
+                float: left;
+                width: percentage(1 / $i);
+            }
+        }
+    }
+
+    &-horizontal {
+        li {
+            display: inline-block;
+        }
+    }
+
+    &-dashboard {
+        li {
+            margin-right: $margin-sm;
+            width: 320px;
+            height: 553px;
+        }
+    }
+
+    $cases: (
+        products: (padding: 6px),
+        discover: (padding: 12px)
+    );
+    
+    @each $name, $map in $cases {
+        &-#{$name} {
+            margin: - map-get($map, padding);
+
+            li {
+                padding: map-get($map, padding);
+            }
+        }
+    }
+}

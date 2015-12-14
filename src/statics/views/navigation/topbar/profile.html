@@ -1,0 +1,21 @@
+<!-- back button -->
+<ul>
+    <li>
+        <a href="#" class="cth-util-toucharea cth-topbar-back">Back</a>
+    </li>
+</ul>
+
+<!-- user part -->
+<ul class="sub-right cth-list cth-list-horizontal cth-list-buttons">
+    <li>
+        <a href="" ng-click="sidebarExpanded = !sidebarExpanded;" class="cth-util-toucharea">
+            <img src="images/topbar-notification.png" class="cth-notification-img" ng-show="!sidebarExpanded">
+            <img src="images/topbar-notification-close.png" class="cth-notification-img" ng-show="sidebarExpanded">
+        </a>
+    </li>
+    <li>
+        <a ui-sref="app.profile" class="cth-util-toucharea">
+            <img src="images/topbar-user.png" class="cth-topbar-user-img">
+        </a>
+    </li>
+</ul>

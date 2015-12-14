@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_question</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Exports" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="icon_question" sketch:type="MSArtboardGroup" fill="#000000">
+            <path d="M8,14 L8,14 C11.3137085,14 14,11.3137085 14,8 C14,4.6862915 11.3137085,2 8,2 C4.6862915,2 2,4.6862915 2,8 C2,11.3137085 4.6862915,14 8,14 L8,14 Z M8,16 L8,16 C3.581722,16 0,12.418278 0,8 C0,3.581722 3.581722,0 8,0 C12.418278,0 16,3.581722 16,8 C16,12.418278 12.418278,16 8,16 L8,16 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            <path d="M6.824,8.822 L8.624,8.822 C8.504,7.502 10.256,7.118 10.256,5.678 C10.256,4.166 9.152,3.566 7.76,3.566 C6.848,3.566 6.068,4.022 5.504,4.694 L6.632,5.726 C6.944,5.438 7.208,5.222 7.616,5.222 C7.976,5.222 8.288,5.39 8.288,5.822 C8.288,6.59 6.584,7.262 6.824,8.822 L6.824,8.822 Z M6.512,10.646 C6.512,11.342 7.016,11.894 7.712,11.894 C8.408,11.894 8.912,11.342 8.912,10.646 C8.912,9.95 8.408,9.398 7.712,9.398 C7.016,9.398 6.512,9.95 6.512,10.646 L6.512,10.646 Z" id="Oval-11" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

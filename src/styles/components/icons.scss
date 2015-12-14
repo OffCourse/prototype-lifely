@@ -1,0 +1,44 @@
+.cth-icon {
+    font-family:"icons";
+    display:inline-block;
+    vertical-align:middle;
+    line-height:1;
+    font-weight:normal;
+    font-style:normal;
+    font-size: 11px;
+    color: rgba(152,174,179,0.60);
+    speak:none;
+    text-decoration:inherit;
+    text-transform:none;
+    text-rendering:auto;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+
+    &-secondary {
+        color: $aqua;
+    }
+
+    &-light-color {
+        color: rgba(#fff,0.60);
+    }
+
+    &-social-color {
+        color: #EB874D;
+    }
+}
+
+.cth-icon-close:before {
+    font-size: 15px;
+    color: #fff;
+}
+
+.cth-icon-left:before,
+.cth-icon-left-double:before {
+    font-size: 14px;
+}
+
+.cth-icon-done:before,
+.cth-icon-search2:before,
+ {
+    font-size: 15px;
+}

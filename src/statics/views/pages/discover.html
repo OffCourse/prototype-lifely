@@ -1,0 +1,12 @@
+<div class="cth-discover">
+    <img class="filter" src="images/discover-filter.png">
+    <ul class="cth-list cth-list-column3 cth-list-discover">
+        <li ng-repeat="goal in goals">
+            <a ui-sref="app.goal({goal: $index})" class="cth-discover-tile cth-discover-tile-{{ goal.colorName }}">
+                <div class="cth-label" ng-repeat="tag in goal.tags" ng-bind="tag"></div>
+                <h2 ng-bind="goal.title"></h2>
+                <div class="cth-user cth-user-{{ goal.avatar }}"><p ng-bind="goal.author"></p></div>
+            </a>
+        </li>
+    </ul>
+</div>

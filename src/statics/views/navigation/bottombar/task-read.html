@@ -1,0 +1,23 @@
+<div>
+    <img src="images/bottombar_open.png" alt="" ng-show="!bottombarExpanded" ng-click="bottombarExpanded = true;">
+
+    <p><a class="cth-button cth-button-secondary" ng-show="!readButtonChange" ng-click="readButtonChange = true;">Mark as done</a></p>
+    <p><a class="cth-button cth-button-dark" ng-show="readButtonChange" ng-click="readButtonChange = false;">Mark undone<i class="cth-icon cth-icon-done"></i></a></p>
+
+    <img src="images/bottombar_close.png" alt="" ng-show="bottombarExpanded" ng-click="bottombarExpanded = false;">
+
+    <ol class="cth-task-list" ng-show="bottombarExpanded">
+        <li ng-repeat="task in tasks">
+            <a ng-click="task.link()" class="cth-task-list--item" ng-class="{'cth-task-list--item-active': currentTask === $index}">
+                <p class="cth-task-list--item--title">
+                    <span>{{$index + 1}}</span>
+                    {{task.title}}
+                    <i class="cth-icon {{task.iconClass}} cth-icon-secondary"></i>
+                </p>
+                <p class="cth-task-list--item--info">
+                    {{task.dateAppearance}}
+                </p>
+            </a>
+        </li>
+    </ol>
+</div>

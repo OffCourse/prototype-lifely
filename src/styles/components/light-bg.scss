@@ -1,0 +1,12 @@
+.cth-light-bg {
+    background: rgba($grey-light, .4);
+    border-radius: 2px;
+
+    &-xs {
+        padding: $padding-xs;
+    }
+    
+    &-sm {
+        padding: $padding-sm;
+    }
+}

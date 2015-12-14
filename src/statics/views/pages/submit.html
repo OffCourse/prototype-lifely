@@ -1,0 +1,29 @@
+<div class="cth-submit">
+    <a ng-click="back()" class="cth-close"><i class="cth-icon cth-icon-close"></i></a>
+    <div class="cth-header">
+        <h2>Submit your work</h2>
+        <p>Build your first website</p>
+    </div>
+    <div class="cth-strip">
+        <div class="cth-light-bg cth-light-bg-xs">
+            <div class="cth-form-group">
+                <input type="text" class="cth-form-input" ng-model="githubLink" name="github-link" placeholder="http://www.github.com/exercise4"></input>
+            </div>
+
+            <img class="cth-responsive" src="images/github.png" ng-show="githubLink.length >= 8">
+        </div>
+        <div class="cth-choice">
+            <p ng-click="left = true; right = false;" ng-class="{'sub-active': left}"><span class="cth-bold">Submit work in progress</span><br/>
+            On what aspect of your work do you wish to receive feedback?</p>
+            <p ng-click="left = false; right = true;" ng-class="{'sub-active': right}"><span class="cth-bold">Submit final work</span><br/>
+            Submit your final work and give credit to the people who helped you.</p>
+        </div>
+        <div class="cth-light-bg cth-light-bg-sm" ng-show="left">
+            <p class="cth-label" ng-class="{'cth-label-active': currentAspect === $index}" ng-repeat="aspect in aspects" ng-click="clickAspect($index)">{{aspect}}</p>
+        </div>
+        <div class="cth-light-bg cth-light-bg-sm" ng-show="right">
+            <p class="cth-label" ng-class="{'cth-label-active': currentContributors.indexOf($index) > -1}" ng-repeat="contributor in contributors" ng-click="clickContributor($index)">{{contributor}}</p>
+        </div>
+        <p><a ng-click="clickSubmit()" class="cth-button cth-button-secondary">Submit</a></p>
+    </div>
+</div>

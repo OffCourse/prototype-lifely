@@ -1,0 +1,22 @@
+<!-- back button -->
+<ul>
+    <li>
+        <a ui-sref="app.discover" class="cth-util-toucharea cth-topbar-back">
+        <i class="cth-icon cth-icon-search2"></i><span class="cth-icon-text cth-icon-text-white">Discover new goals</span></a>
+    </li>
+</ul>
+
+<!-- user part -->
+<ul class="sub-right cth-list cth-list-horizontal cth-list-buttons">
+    <li>
+        <a href="" ng-click="sidebarExpanded = !sidebarExpanded;" class="cth-util-toucharea">
+            <img src="images/topbar-notification.png" class="cth-notification-img" ng-show="!sidebarExpanded">
+            <img src="images/topbar-notification-close.png" class="cth-notification-img" ng-show="sidebarExpanded">
+        </a>
+    </li>
+    <li>
+        <a ui-sref="app.profile" class="cth-util-toucharea">
+            <img src="images/topbar-user.png" class="cth-topbar-user-img">
+        </a>
+    </li>
+</ul>

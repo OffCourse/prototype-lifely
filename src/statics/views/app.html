@@ -1,0 +1,11 @@
+<main class="cth-main {{ pageClass }}" ng-class="{
+    'state-topbar-active': barOptions.topbar,
+    'state-bottombar-active': barOptions.bottombar
+}">
+    <topbar />
+    <sidebar />
+    <div ui-view ui-view-level="app" class="sub-scrollcontainer">
+
+    </div>
+    <bottombar />
+</main>

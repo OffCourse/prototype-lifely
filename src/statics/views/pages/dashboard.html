@@ -1,0 +1,16 @@
+<div class="cth-dashboard">
+    <ul class="cth-list-inline cth-list-dashboard cth-scrolling-element">
+        <li ng-repeat="goal in goals">
+            <a ui-sref="app.goal({goal: $index})" class="cth-dashboard-tile cth-dashboard-tile-{{ goal.colorName }}">
+                <div class="cth-label" ng-repeat="tag in goal.tags" ng-bind="tag"></div>
+                <h1 ng-bind="goal.title"></h1>
+                <div class="cth-user cth-user-{{ goal.avatar }}">
+                    <p>
+                        By
+                        <span class="cth-bold" ng-bind="goal.author"></span>
+                    </p>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>

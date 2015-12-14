@@ -1,0 +1,105 @@
+.cth-task-read {
+    background-color: $white;
+    max-width: 1024px;
+
+    &--main {
+        float: left;
+        //width: 70%;
+
+        .cth-component {
+            padding-left: $padding-lg;
+            padding-right: $padding-lg;
+
+            h4 {
+                margin-bottom: 2px;
+            }
+
+            h2 {
+                margin-bottom: $margin-sm - 10px;
+            }
+
+            .cth-do-task {
+                width: 74%;
+            }
+
+            .cth-task-info {
+                width: 74%;
+                margin-top: $margin-sm;
+
+                .cth-user {
+                    float: left;
+                }
+
+                .cth-people {
+                    float: right;
+                    position: relative;
+
+                    .cth-counter {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+
+                    p {
+                        margin-left: 35px;
+                    }
+                }
+
+                @extend %clearfix;
+            }
+        }
+
+        .cth-link-user {
+            width: 301px;
+            margin-top: $margin-sm;
+            margin-right: 8px;
+        }
+
+        .cth-link-suggest {
+            width: 301px;
+        }
+
+        @extend %clearfix;
+    }
+
+    &--aside {
+        float: right;
+        width: 30%;
+        background-color: $white;
+        height: 632px;
+        overflow-y: scroll;
+
+        li {
+            margin-bottom: $margin-sm;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+
+        .cth-list li {
+            opacity: 0;
+            $position: translateX(25px);
+            transform: $position;
+
+            @keyframes dashboard-tile-appear {
+                0% {
+                    transform: $position;
+                    opacity: 0;
+                }
+
+                100% {
+                    transform: none;
+                    opacity: 1;
+                }
+            }
+
+            animation: dashboard-tile-appear 500ms;
+            animation-delay: 250ms;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+    }
+
+    @extend %clearfix;
+}

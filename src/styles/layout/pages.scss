@@ -1,0 +1,125 @@
+.cth-page {
+
+    &--dashboard {
+        background-color: $color-base;
+    }
+
+    &--discover {
+        background-color: $color-base;
+    }
+
+    &--profile {
+        background-image: url("../images/profile-bg.png");
+        background-position: 0 0;
+        background-size: cover;
+    }
+
+    &--goal,
+    &--task,
+    &--task-read {
+        &-cthyellow {
+            background-color: $cthyellow;
+
+            .cth-people-graph:after {
+                background-image: linear-gradient(to right,  rgba($cthyellow ,0) 0%,rgba($cthyellow, 1) 100%);
+            }
+        }
+
+        &-cthgreen {
+            background-color: $cthgreen;
+
+            .cth-people-graph:after {
+                background-image: linear-gradient(to right,  rgba($cthgreen ,0) 0%,rgba($cthgreen, 1) 100%);
+            }
+        }
+
+        &-cthblue {
+            background-color: $cthblue;
+
+            .cth-people-graph:after {
+                background-image: linear-gradient(to right,  rgba($cthblue ,0) 0%,rgba($cthblue, 1) 100%);
+            }
+        }
+
+        &-cthred {
+            background-color: $cthred;
+
+            .cth-people-graph:after {
+                background-image: linear-gradient(to right,  rgba($cthred ,0) 0%,rgba($cthred, 1) 100%);
+            }
+        }
+
+        &-cthgray {
+            background-color: $cthgray;
+
+            .cth-people-graph:after {
+                background-image: linear-gradient(to right,  rgba($cthgray ,0) 0%,rgba($cthgray, 1) 100%);
+            }
+        }
+
+        &-blue {
+            background-color: $blue-light;
+
+            .cth-people-graph:after {
+                background-image: linear-gradient(to right,  rgba($blue-light ,0) 0%,rgba($blue-light, 1) 100%);
+            }
+        }
+
+        &-navy {
+            background-color: $blue-dark;
+
+            .cth-people-graph:after {
+                background-image: linear-gradient(to right,  rgba($blue-dark ,0) 0%,rgba($blue-dark, 1) 100%);
+
+            }
+        }
+
+        &-purple {
+            background-color: $purple;
+
+            .cth-people-graph:after {
+                background-image: linear-gradient(to right,  rgba($purple ,0) 0%,rgba($purple, 1) 100%);
+
+            }
+        }
+
+        &-orange {
+            background-color: $orange;
+
+            .cth-people-graph:after {
+                background-image: linear-gradient(to right,  rgba($orange ,0) 0%,rgba($orange, 1) 100%);
+
+            }
+        }
+
+        &-red {
+            background-color: $red;
+
+            .cth-people-graph:after {
+                background-image: linear-gradient(to right,  rgba($red ,0) 0%,rgba($red, 1) 100%);
+
+            }
+        }
+
+        &-aqua {
+            background-color: $aqua;
+
+            .cth-people-graph:after {
+                background-image: linear-gradient(to right,  rgba($aqua ,0) 0%,rgba($aqua, 1) 100%);
+
+            }
+        }
+    }
+
+    &--submit {
+        background-image: url("../images/submit-bg.png");
+        background-position: 0 0;
+        background-size: cover;
+    }
+
+    &--submitted {
+        background-image: url("../images/submit-bg.png");
+        background-position: 0 0;
+        background-size: cover;
+    }
+}

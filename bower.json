@@ -1,0 +1,14 @@
+{
+  "name": "codingthehumanities-prototype",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular-route": "~1.4.8",
+    "angular-ui-router": "~0.2.15",
+    "angularjs": "~1.4.8",
+    "jquery": "~2.1.4",
+    "lodash": "~3.10.1",
+    "ng-fastclick": "~1.0.2",
+    "normalize-css": "~3.0.2",
+    "moment": "~2.11.1"
+  }
+}
